@@ -1,14 +1,10 @@
 def F(x, A):
-    return ((x % 2 == 0) <= (x % 3 != 0)) or (x + A >= 100)
+    return ((x % A != 0) <= ((x % 6 == 0) <= (x % 9 != 0)))
 
 
 for A in range(1, 100):
-    # flag = 1
     for x in range(1, 100):
         if F(x, A) == 0:
-            # flag = 0
             break
     else:
         print(A)
-    # if flag:
-    #     print(A)
