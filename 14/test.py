@@ -1,9 +1,10 @@
 # перевод из любой системы счисления в десятичную
 number_2 = '10100'
 number_5 = '1201234'
-number_18 = 'ff'
+number_16 = 'ff'
 
-# print(int(number_18, 18))
+# print(int(number_16, 16))
+# print(oct(255))
 
 # перевод из десятичной системы счисления в любую
 ABC = '0123456789abcdefgh'
@@ -16,6 +17,7 @@ def ten_to_q(number, base):
     return result
 
 
+print(ten_to_q(255, 16))
 
 ABC = '0123456789abcdefgh'
 def ten_to_q2(number, base):
@@ -24,4 +26,4 @@ def ten_to_q2(number, base):
     return ten_to_q2(number // base, base) + ABC[number % base]
 
 
-print(ten_to_q2(255, 16))
+

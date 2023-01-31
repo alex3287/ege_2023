@@ -4,7 +4,7 @@ def F(x, A):
 
 for A in range(1, 100):
     # flag = 1
-    for x in range(1, 100):
+    for x in range(1, 200):
         if F(x, A) == 0:
             # flag = 0
             break
