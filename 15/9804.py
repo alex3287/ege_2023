@@ -4,9 +4,13 @@ def F(x, A):
 
 for A in range(100):
     flag = 1
+
     for x in range(100):
+
+    for x in range(1000):
+
         if F(x, A) == 0:
             flag = 0
             break
     if flag:
-        print(A)
+
