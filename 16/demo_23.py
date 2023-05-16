@@ -1,7 +1,7 @@
 from sys import setrecursionlimit
 
 
-setrecursionlimit(2030)
+setrecursionlimit(2500)
 
 
 def F(n):
